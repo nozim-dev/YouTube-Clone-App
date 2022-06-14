@@ -1,13 +1,139 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #181818;
+  color: #fff;
+}
+.SearchBox {
+  width: 100%;
+  height: 60px;
+  background-color: #202020;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > a > .LogoBrand {
+  margin-left: 53%;
+  width: 120px;
+  height: 66px;
+}
+.input_search {
+  width: 494px;
+  height: 24px;
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 2px;
+  background-color: #121212;
+  color: #E1E1E1;
+}
+.input_search:focus {
+  outline: #4848ff 1.5px solid;
+}
+.icons {
+  width: 15%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons > .functions {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+.icons > .functions > svg {
+  fill: #fff;
+  width: 30px !important;
+  cursor: pointer;
+}
+.icons > a > img {
+  width: 35px;
+  height: 35px;
+}
+.videoList {
+  width: 402px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5px;
+}
+.img_box {
+  width: 168px;
+  margin: 0 10px 0 0;
+}
+.img_box > img {
+  width: 100%;
+  height: 94px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.titleVideo {
+  /* width: 65%; */
+  width: 202px;
+}
+.titleVideo > b {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.small {
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.VideoMain {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.videoIframe {
+  width: 100%;
+  margin-top: 5px;
+}
+.videoIframe > iframe {
+  width: 100%;
+  height: 378px;
+}
+.videoInfo{
+  padding: 8px;
+}
+.videoInfo > .titleVideo {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.channelTitle {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.descriptionVideo {
+  margin-top: 20px;
+  width: 80%;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.noResult{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
 }
