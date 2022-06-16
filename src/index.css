@@ -181,8 +181,6 @@ body {
   }
 }
 
-/* 550 */
-
 @media screen and (max-width: 900px) {
   .header > a > .LogoBrand {
     margin-left: 20%;
