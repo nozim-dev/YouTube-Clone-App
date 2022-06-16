@@ -31,7 +31,7 @@ body {
   padding: 18px;
   border-radius: 2px;
   background-color: #121212;
-  color: #E1E1E1;
+  color: #e1e1e1;
 }
 .input_search:focus {
   outline: #4848ff 1.5px solid;
@@ -112,7 +112,7 @@ body {
   width: 100%;
   height: 378px;
 }
-.videoInfo{
+.videoInfo {
   padding: 8px;
 }
 .videoInfo > .titleVideo {
@@ -133,7 +133,135 @@ body {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.noResult{
+.noResult {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.hr {
+  background-color: #666;
+  border: #666 1px solid;
+  margin: 3% 0 3% 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .VideoMain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .videos {
+    margin: auto;
+    width: 80%;
+  }
+  .videoInfo {
+    width: 100%;
+  }
+  .titleVideo {
+    width: 100%;
+  }
+  .channelTitle {
+    width: 100%;
+  }
+  .descriptionVideo {
+    width: 100%;
+  }
+  .img_box {
+    width: 368px;
+    margin: 0 3% 0 0;
+  }
+  .img_box > img {
+    margin-left: 0;
+    width: 300px;
+    height: 150px;
+  }
+  .videoList {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+}
+
+/* 550 */
+
+@media screen and (max-width: 900px) {
+  .header > a > .LogoBrand {
+    margin-left: 20%;
+    width: 80px;
+    height: 50px;
+  }
+  .input_search {
+    width: 294px;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .icons {
+    width: 20%;
+  }
+  .videos {
+    margin: auto;
+    width: 100%;
+  }
+  .img_box {
+    width: 368px;
+    margin: 0 3% 0 1%;
+  }
+  .videoList {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .videoItems {
+    flex: 100%;
+    display: block;
+    flex: wrap;
+  }
+  .img_box > img {
+    width: 100%;
+    height: 367px;
+    margin: 0;
+  }
+  .img_box {
+    width: 100%;
+    margin: 0;
+    height: 367px;
+  }
+  .titleVideo {
+    margin: 2%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header > a > .LogoBrand {
+    margin-left: 1%;
+    width: 70px;
+    height: 55px;
+  }
+  .icons > .functions{
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header > a > .LogoBrand {
+    margin-left: 1%;
+    width: 80px;
+    height: 55px;
+  }
+  .input_search {
+    width: 194px;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .img_box > img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .titleVideo{
+    margin-top: 0;
+  }
+  .titleVideo > b{
+    margin-top: 0;
+  }
 }
